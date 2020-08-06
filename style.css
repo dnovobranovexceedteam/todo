@@ -1,0 +1,60 @@
+
+h1 {
+    position: absolute;
+    font-size: 100px;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(94, 8, 25, 0.523);
+    margin-left: 43%;
+
+}
+
+input#input {
+  position: absolute;
+  top: 200px;
+  width: 450px;
+  height: 50px;
+  left: 40%;
+  
+}
+
+li {
+  list-style-type: none;
+  position: relative;
+  top: 240px;
+  width: 452px;
+  height: 50px;
+  font-size: 30px;
+  font-style: italic;
+  left: 38.72%;
+  outline: 2px solid #000; /* Чёрная рамка */
+  border: 1px solid #fff; /* Белая рамка */
+  
+}
+
+.done span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+a {
+  color: red;
+  font-style: normal;
+  
+}
+
+input#checkAll{
+  position: absolute;
+  top: 220px;
+  left: 40%;
+}
+
+::placeholder {
+  padding-left: 30px;
+  font-size: 30px;
+  font-style: italic;
+}
+
+div#bottomBlock {
+  color: black;
+}

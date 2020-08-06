@@ -1,20 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="todo list">
-        <title>TODO</title>
-    </head>
-    <body>
-        <h1>todos</h1>
-        <input type="text" class="message" placeholder="What needs to be done?">
-        <div>Double-click to edit a todo<br>
-            Written by
-            <a href="https://github.com/addyosmani">Addy Osmani </a><br>
-            Part of 
-            <a href="http://todomvc.com/">TodoMVC</a>
-        </div>
-        <script src="script.js"></script>
-    </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css">
+  <title>TODO</title>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <h1>todos</h1>
+    <ul id="todoList">
 
-</html> 
+
+      <li class="">
+        <input type="checkbox">
+        <input />
+        <span class="text-span">
+          ${text}
+        </span>
+        <span>
+          X
+        </span>	
+      </li>
+      <!-- <li class="">
+        <input type="checkbox">
+        <span class="text-span">
+          ${text}
+        </span>
+        <span>
+          X
+        </span>	
+      </li>
+      <li class="">
+        <input type="checkbox">
+        <span class="text-span">
+          ${text}
+        </span>
+        <span>
+          X
+        </span>	
+      </li>
+      <li class="">
+        <input type="checkbox">
+        <span class="text-span">
+          ${text}
+        </span>
+        <span>
+          X
+        </span>	
+      </li> -->
+    </ul>
+  <input type="text" id="input" placeholder="What needs to be done?">
+  <input type="checkbox" id="checkAll">
+  
+  <div></div>
+
+    <script src="script.js"></script>
+    
+</body>
+<footer>
+</footer>
+</html>
