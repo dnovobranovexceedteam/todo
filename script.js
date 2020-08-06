@@ -38,13 +38,12 @@ function addItem(text) {
         li.classList.toggle("done");
       });
     }
+   
   });
 
   const li = document.createElement("li");
   todoList.append(li);
 
-  const bottomBlock = document.createElement("div");
-  li.append(bottomBlock);
 
   let checkbox = document.createElement("input");
   checkbox.type = "checkbox";
@@ -52,33 +51,31 @@ function addItem(text) {
   li.appendChild(checkbox);
   checkbox.addEventListener("click", function () {
     li.classList.toggle("done");
+    get doneTasks(){
+      return this.done.length;
+    }
   });
 
   let span = document.createElement("span");
   span.innerHTML = text;
-  // span.classList.add('text-span')
   this.value = "";
   li.appendChild(span);
 
   span.addEventListener("click", function func(e) {
     let input = document.createElement("input");
-    console.log(this);
     input.value = this.innerHTML;
     this.innerHTML = "";
     this.appendChild(input);
 	// $(input).focus()
-    // this.removeEventListener('click', func);
+    this.removeEventListener('click', func);
 
     let self = this;
     input.addEventListener("keydown", function (e) {
       if (e.keyCode == 13) {
         self.innerHTML = this.value;
-        changeItem(this.value);
+       
       }
-      //
-    //   document.getElementsByName("span").addEventListener("click", function () {
-    //     generateChars();
-    //   });
+    
     });
   });
 
@@ -92,8 +89,8 @@ function addItem(text) {
     event.preventDefault();
   });
 }
-let showAll = document.createElement("a");
-showAll.innerHTML = "All";
+// let showAll = document.createElement("a");
+// showAll.innerHTML = "All";
 
 input.addEventListener("keydown", function (e) {
   if (e.keyCode == 13) {
@@ -108,3 +105,4 @@ input.addEventListener("keydown", function (e) {
     console.log(taskList);
   }
 });
+

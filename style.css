@@ -55,6 +55,6 @@ input#checkAll{
   font-style: italic;
 }
 
-div#bottomBlock {
-  color: black;
+span#text-span{
+  display: none;
 }
