@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TODO</title>
+  <link href="style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1>todos</h1>
+
+  <div class='container'>
+    <div class='input-group mb-3'>
+      <div class="input-wrapper">
+        <div class="input-checkbox">
+          <label for="select-all" class="input-checkbox__label">+</label>
+          <input type='checkbox' id="select-all" class='check-all input-checkbox__value'>
+        </div>
+        <input type='text' class="form-control input-todo" id='input-task' placeholder='What needs to be done?' autofocus>
+      </div>
+
+      <!-- <div class="input-group-prepend">
+        <div class="input-group-text">
+          
+        </div>
+      </div>
+      
+      <div class="input-group-append">
+        
+      </div> -->
+      <div class='container'>
+        <ul class='out-todo'></ul> 
+      </div>
+    
+
+
+      <div>
+        <ul class="nav justify-content-center">
+          <li class="nav-item" id='check-count'>Checked: <span>0</span></li>
+          <li class="nav-item" id='items-left'>Items left: <span >0</span></li>
+        </ul>
+
+        <div class="btn-group hidden">
+          <button type='submit' class='filter-btn btn btn-info all'>all</button>
+          <button type='submit' class='filter-btn btn btn-info not-completed'>active</button>
+          <button type='submit' class='filter-btn btn btn-info completed'>completed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class='container'>
+    <div class="row justify-content-md-center">
+      <div class="page-container btn-group">
+        
+      </div>
+    </div>
+  </div> -->
+
+    
+  
+    <div class="row justify-content-md-center">
+      
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="underscore-min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
