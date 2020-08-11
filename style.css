@@ -1,60 +1,46 @@
-
-h1 {
-    position: absolute;
+h1
+{
+    text-align: center;
     font-size: 100px;
     font-weight: 100;
     font-family: 'Courier New', Courier, monospace;
     color: rgba(94, 8, 25, 0.523);
-    margin-left: 43%;
+ 
+}
+.item-id {
+    word-break: break-all;
+}
+.out-todo {
+    padding:0;
+}
+/* .edit-input {
+    margin-left: 30px;
+    margin-right: 150px;
+    padding-left: 30px;
+    padding-right: 60px; 
+} */
+
+#input-task{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
 
 }
 
-input#input {
-  position: absolute;
-  top: 200px;
-  width: 450px;
-  height: 50px;
-  left: 40%;
-  
-}
+ul#input-group mb-3{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
 
-li {
-  list-style-type: none;
-  position: relative;
-  top: 240px;
-  width: 452px;
-  height: 50px;
-  font-size: 30px;
-  font-style: italic;
-  left: 38.72%;
-  outline: 2px solid #000; /* Чёрная рамка */
-  border: 1px solid #fff; /* Белая рамка */
-  
-}
 
-.done span {
-  text-decoration: line-through;
-  color: gray;
-}
-
-a {
-  color: red;
-  font-style: normal;
-  
-}
-
-input#checkAll{
-  position: absolute;
-  top: 220px;
-  left: 40%;
-}
-
-::placeholder {
-  padding-left: 30px;
-  font-size: 30px;
-  font-style: italic;
-}
-
-span#text-span{
-  display: none;
 }
