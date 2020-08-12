@@ -16,9 +16,10 @@ $(document).ready(() => {
                           <input type='checkbox' class='item-checkbox' ${item.status ? 'checked' : ''} id='item-checkbox-${index}'>
                           <label for='item-checkbox-${index}'></label>
                           <span class='item-id'>${item.name}</span>
-                          <button class='btn btn-info' id='delete-task'>delete</button>
+                          <label for='button-delete'button class='btn btn-info' id='delete-task'>×</label>
                       </li>`;
         }
+      
       });
       $('.out-todo').html(str);
       $('.btn-group').removeClass('hidden');
